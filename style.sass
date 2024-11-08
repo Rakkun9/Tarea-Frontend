@@ -1,0 +1,106 @@
+// Variables de Sass
+$bg-dark: #121212
+$card-bg: #343a40
+$hover-bg: #495057
+$text-light: #f8f9fa
+$highlight-color: #ffc107
+$accent-color: #17a2b8
+$border-radius: 12px
+$shadow: 0px 4px 8px rgba(0, 0, 0, 0.5)
+
+// Estilos generales del body
+body
+    background-color: $bg-dark
+    color: $text-light
+    font-family: 'Arial', sans-serif
+    line-height: 1.6
+
+.navbar
+    background-color: $bg-dark
+    border-bottom: 3px solid $highlight-color
+    box-shadow: $shadow
+
+.navbar-brand
+    font-size: 1.8rem
+    color: $highlight-color
+    &:hover
+        color: lighten($highlight-color, 10%)
+.card
+    background-color: $card-bg
+    color: $text-light
+    transition: transform 0.4s, box-shadow 0.4s
+    border-radius: $border-radius
+    box-shadow: $shadow
+    overflow: hidden
+
+&:hover
+    transform: scale(1.1)
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7)
+
+.card-img-top
+    border-top-left-radius: $border-radius
+    border-top-right-radius: $border-radius
+
+.card-body
+    padding: 1.2rem
+    h5.card-title
+        font-weight: bold
+        font-size: 1.2rem
+        color: $highlight-color
+        text-transform: uppercase
+        letter-spacing: 1px
+
+    .card-text
+        font-style: italic
+        opacity: 0.9
+
+.dropdown-menu
+    background-color: $card-bg
+    border-radius: $border-radius
+    border: 1px solid $hover-bg
+
+.dropdown-item
+    color: $text-light
+    padding: 0.6rem 1.2rem
+    border-radius: $border-radius / 2
+    transition: background-color 0.3s
+
+    &:hover, &:focus
+        background-color: $hover-bg
+        color: $highlight-color
+        font-weight: bold
+
+.nav-tabs
+    border-bottom: 2px solid $hover-bg
+
+.nav-item
+    .nav-link
+        color: $text-light
+        font-weight: bold
+        padding: 0.8rem 1.2rem
+        transition: color 0.3s, background-color 0.3s
+
+    &:hover
+        color: $highlight-color
+        background-color: rgba($accent-color, 0.1)
+        border-radius: $border-radius / 2
+
+    &.active
+        color: $highlight-color
+        background-color: rgba($accent-color, 0.2)
+        border: 1px solid $highlight-color
+        border-bottom: none
+        border-radius: $border-radius $border-radius 0 0
+
+@mixin filtro-personalizado($filter-name, $color)
+.#{$filter-name}
+    color: $color
+    font-weight: bold
+    border-bottom: 2px solid $color
+    text-transform: uppercase
+    padding: 0.2rem 0
+
+// Aplicación de los filtros de forma dinámica
+@include filtro-personalizado('best', $highlight-color)
+@include filtro-personalizado('worst', $text-light)
+@include filtro-personalizado('alpha', $accent-color)

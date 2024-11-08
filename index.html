@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PelíCrítica</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="#">PelíCrítica</a>
+        <form class="d-flex flex-grow-1 mx-4">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar por título de película"
+            aria-label="Buscar"
+          />
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-end mt-3">
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Filtrar por
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li>
+            <a class="dropdown-item" href="#" data-filter="best"
+              >Mejores películas</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-filter="worst"
+              >Peores películas</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-filter="alpha"
+              >Orden alfabético</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">En cartelera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mejor valoradas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Próximamente</a>
+        </li>
+      </ul>
+
+      <div class="row mt-4">
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula1.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/9w0Vh9eizfBXrcomiaFWTIPdboo.jpg"
+                class="card-img-top"
+                alt="El Viaje Fantástico"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The wild robot</h5>
+                <p class="card-text">Género: Aventura, Fantasía</p>
+                <span class="badge bg-warning text-dark">8.7</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula2.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/lqoMzCcZYEFK729d6qzt349fB4o.jpg"
+                class="card-img-top"
+                alt="Noche de Misterio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The substance</h5>
+                <p class="card-text">Género: Suspense, Drama</p>
+                <span class="badge bg-warning text-dark">7.9</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula3.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
+                class="card-img-top"
+                alt="Amor en París"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alien</h5>
+                <p class="card-text">Género: Romance, Comedia</p>
+                <span class="badge bg-warning text-dark">8.2</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula4.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+                class="card-img-top"
+                alt="El Último Guerrero"
+              />
+              <div class="card-body">
+                <h5 class="card-title">DeadPool</h5>
+                <p class="card-text">Género: Acción, Ciencia Ficción</p>
+                <span class="badge bg-warning text-dark">8.5</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula5.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/qpdFKDvJS7oLKTcBLXOaMwUESbs.jpg"
+                class="card-img-top"
+                alt="Risas Inesperadas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Asreck</h5>
+                <p class="card-text">Género: Comedia</p>
+                <span class="badge bg-warning text-dark">7.8</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula6.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/kKgQzkUCnQmeTPkyIwHly2t6ZFI.jpg"
+                class="card-img-top"
+                alt="El Secreto del Bosque"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beetlejuice</h5>
+                <p class="card-text">Género: Misterio, Terror</p>
+                <span class="badge bg-warning text-dark">8.1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula7.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/izuzUb0sDokqp9o8utVfsrSJuy5.jpg"
+                class="card-img-top"
+                alt="Aventuras en el Espacio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Platform</h5>
+                <p class="card-text">Género: Ciencia Ficción, Aventura</p>
+                <span class="badge bg-warning text-dark">8.9</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 mb-4">
+          <a href="/peliculas/pelicula8.html">
+            <div class="card bg-dark text-light">
+              <img
+                src="https://image.tmdb.org/t/p/w300/l1175hgL5DoXnqeZQCcU3eZIdhX.jpg"
+                class="card-img-top"
+                alt="El Gran Robo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Terrifier</h5>
+                <p class="card-text">Género: Acción, Crimen</p>
+                <span class="badge bg-warning text-dark">7.7</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // script.js
+
+      // Selecciona el formulario de búsqueda y el input
+      const searchForm = document.querySelector("form");
+      const searchInput = searchForm.querySelector('input[type="search"]');
+      const movieContainer = document.querySelector(".row"); // Contenedor de las películas
+      const movieCards = Array.from(document.querySelectorAll(".col-md-3")); // Convertir NodeList en array para manipulación
+
+      // Evento de búsqueda
+      searchForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // Evita que la página se recargue
+        const searchTerm = searchInput.value.toLowerCase(); // Término de búsqueda en minúsculas
+
+        // Filtra y ordena las tarjetas de películas
+        const matchingCards = movieCards.filter((col) => {
+          const title = col
+            .querySelector(".card-title")
+            .textContent.toLowerCase();
+          const match = title.includes(searchTerm);
+          col.style.display = match ? "block" : "none"; // Muestra u oculta según el término de búsqueda
+          return match;
+        });
+
+        // Limpiar el contenedor de las películas
+        movieContainer.innerHTML = "";
+
+        // Agrega las tarjetas coincidentes al inicio, seguidas de las no coincidentes
+        matchingCards.forEach((card) => movieContainer.appendChild(card));
+        movieCards
+          .filter((col) => !matchingCards.includes(col))
+          .forEach((card) => movieContainer.appendChild(card));
+      });
+    </script>
+    <script>
+      // script.js
+
+      // Selecciona el formulario de búsqueda, input de búsqueda, contenedor de películas y las tarjetas
+      // script.js
+
+      // Selecciona el formulario de búsqueda, input de búsqueda, contenedor de películas y las tarjetas
+      // Selecciona el menú desplegable de filtros
+      const filterMenu = document.querySelector(".dropdown-menu");
+
+      // Función para ordenar y mostrar las películas
+      function updateMoviesDisplay(filteredMovies) {
+        movieContainer.innerHTML = ""; // Limpia el contenedor de películas
+        filteredMovies.forEach((card) => movieContainer.appendChild(card)); // Añade las tarjetas ordenadas
+      }
+
+      // Evento de búsqueda
+      searchForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // Evita el envío del formulario
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Filtra las tarjetas de películas
+        const matchingCards = movieCards.filter((col) => {
+          const title = col
+            .querySelector(".card-title")
+            .textContent.toLowerCase();
+          const match = title.includes(searchTerm);
+          col.style.display = match ? "block" : "none";
+          return match;
+        });
+
+        // Muestra solo las tarjetas coincidentes al principio
+        updateMoviesDisplay(
+          matchingCards.concat(
+            movieCards.filter((col) => !matchingCards.includes(col))
+          )
+        );
+      });
+
+      // Evento para el filtrado por criterio
+      filterMenu.addEventListener("click", (e) => {
+        e.preventDefault(); // Evita el recargado de página
+        const filter = e.target.dataset.filter; // Obtiene el filtro seleccionado
+
+        // Ordena las tarjetas según el filtro
+        let sortedCards = [...movieCards];
+        switch (filter) {
+          case "best":
+            // Mejores películas (orden descendente por calificación)
+            sortedCards.sort((a, b) => {
+              return (
+                parseFloat(b.querySelector(".badge").textContent) -
+                parseFloat(a.querySelector(".badge").textContent)
+              );
+            });
+            break;
+          case "worst":
+            // Peores películas (orden ascendente por calificación)
+            sortedCards.sort((a, b) => {
+              return (
+                parseFloat(a.querySelector(".badge").textContent) -
+                parseFloat(b.querySelector(".badge").textContent)
+              );
+            });
+            break;
+          case "alpha":
+            // Orden alfabético por título
+            sortedCards.sort((a, b) => {
+              return a
+                .querySelector(".card-title")
+                .textContent.localeCompare(
+                  b.querySelector(".card-title").textContent
+                );
+            });
+            break;
+        }
+
+        // Muestra las tarjetas ordenadas según el filtro
+        sortedCards.forEach((col) => (col.style.display = "block")); // Asegura que todas las tarjetas estén visibles
+        updateMoviesDisplay(sortedCards);
+      });
+    </script>
+  </body>
+</html>
